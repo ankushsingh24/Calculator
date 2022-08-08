@@ -1,7 +1,7 @@
 function takeinput(x) {
-  console.log("hello");
+  //   console.log("hello");
   var val = (document.getElementById("input").value += x);
-  console.log(val);
+  //   console.log(val);
 }
 
 function answer() {
@@ -9,4 +9,10 @@ function answer() {
   console.log(value);
   var answer = eval(value);
   document.getElementById("input").value = answer;
+}
+
+// document.getElementById("clear").addEventListener("click", clearText);
+function clearText() {
+  document.getElementById("input").value = "";
+  console.log("Cleared");
 }
